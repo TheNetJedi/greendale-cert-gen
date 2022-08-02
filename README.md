@@ -1,1 +1,1 @@
-# greendale-cert-gen
+# Greendale Community College - Graduation Certificate Generator
