@@ -1,8 +1,189 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'Old English Text MT';
+  src: url('../fonts/OldEnglishTextMT.eot');
+  src: url('../fonts/OldEnglishTextMT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OldEnglishTextMT.woff2') format('woff2'),
+    url('../fonts/OldEnglishTextMT.woff') format('woff'),
+    url('../fonts/OldEnglishTextMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  color: #00B7FF;
+@font-face {
+  font-family: 'CollegiateHeavyOutline';
+  src: url('../fonts/CollegiateHeavyOutline-Medium.eot');
+  src: url('../fonts/CollegiateHeavyOutline-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/CollegiateHeavyOutline-Medium.woff2') format('woff2'),
+    url('../fonts/CollegiateHeavyOutline-Medium.woff') format('woff'),
+    url('../fonts/CollegiateHeavyOutline-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#certificate {
+  position: relative;
+  display: inline-block;
+
+  height: 810px;
+  width: 1080px;
+  font-family: 'Old English Text MT';
+  font-size: 23px;
+  line-height: 29px;
+  border: red 7px solid;
+  padding: 54px 0;
+
+  background: rgb(233, 237, 249);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 237, 249, 1) 0%,
+    rgba(194, 207, 240, 1) 40%,
+    rgba(194, 207, 240, 1) 60%,
+    rgba(233, 237, 249, 1) 100%
+  );
+  text-align: center;
+}
+
+#top-container {
+  /* width: 340px; */
+  padding: 0 108px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+#bottom-container {
+  padding: 0 85px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+#top-text {
+  display: inline-block;
+  width: 648px;
+  margin: 0 auto;
+}
+
+#college-text {
+  display: inline-block;
+  width: 540px;
+  margin: 7px auto 0 auto;
+  font-family: 'CollegiateHeavyOutline';
+  color: #2c308b;
+  font-size: 50px;
+  line-height: 63px;
+}
+
+#trustee-text {
+  display: inline-block;
+  width: 540px;
+  margin: 22px auto 0 auto;
+}
+
+#student-name {
+  margin-top: 27px;
+  font-size: 65px;
+}
+
+#course-name {
+  margin-top: 40px;
+  font-size: 43px;
+}
+
+#description-text {
+  margin-top: 22px;
+}
+
+#blue-box {
+  position: absolute;
+  z-index: 2;
+  margin: '20px';
+  width: calc(1080px - 72px);
+  height: calc(810px - 72px);
+  left: 540px;
+  top: 405px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 4px solid blue;
+}
+
+#footer-image {
+  margin-top: 8px;
+  width: calc(1080px - 170px);
+  height: auto;
+}
+
+#pdf-button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pdf-button {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+#certificate-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#create-certificate-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  padding: 50px 40px;
+  background-color: aliceblue;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type='text'],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type='submit'] {
+  width: 100%;
+  font-size: 18px;
+  background-color: rgb(41, 41, 148);
+  color: white;
+  padding: 14px 20px;
+  margin: 18px 0 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: midnightblue;
 }
