@@ -6,8 +6,9 @@ function getPdf() {
       document.getElementById('pdf-button').style.visibility = 'hidden';
     },
   }).then((canvas) => {
-    console.log('here!');
     const imgData = canvas.toDataURL('image/png');
+    canvas.width = 1080;
+    canvas.height = 810;
     const pdf = new jsPDF({
       orientation: 'landscape',
       unit: 'mm',
@@ -17,5 +18,4 @@ function getPdf() {
     pdf.save('certificate.pdf');
   });
 }
-console.log('test test');
 document.getElementById('pdf-button').addEventListener('click', getPdf);
