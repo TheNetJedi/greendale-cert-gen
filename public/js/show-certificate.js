@@ -5,6 +5,7 @@ function getPdf() {
     onclone: (document) => {
       document.getElementById('pdf-button').style.visibility = 'hidden';
     },
+    scale: 1,
   }).then((canvas) => {
     const imgData = canvas.toDataURL('image/png');
     canvas.width = 1080;
