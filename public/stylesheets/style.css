@@ -65,6 +65,7 @@
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+  position: relative;
 }
 
 #top-text {
@@ -186,4 +187,76 @@ input[type='submit'] {
 
 input[type='submit']:hover {
   background-color: midnightblue;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#richie-sign {
+  display: inline-block;
+  width: 160px;
+  height: 84px;
+
+  margin-left: 30px;
+  margin-top: 10px;
+  /* width: 317px; */
+  /* height: 184px; */
+}
+
+#bob-sign {
+  display: inline-block;
+  width: 133px;
+  height: 51px;
+  margin-top: 5px;
+}
+
+#craig-sign {
+  display: inline-block;
+
+  /* width: 455px; */
+  /* height: 221px; */
+  margin-top: 80px;
+  margin-left: 80px;
+  width: 200px;
+  height: 97px;
+}
+
+#logo {
+  display: inline-block;
+  width: 215px;
+  height: 200px;
+}
+
+#sign-block {
+  /* display: inline-block; */
+  display: flex;
+  padding: 0 90px;
+  flex-direction: column;
+}
+
+.blank {
+  border-top: 1px solid black;
+  display: inline-block;
+  padding: 5px 90px;
+  font-size: 16px;
+}
+
+#trustee-blank {
+  position: absolute;
+  left: 100px;
+  top: 140px;
+}
+
+#dean-custodian-blank {
+  position: absolute;
+  left: 100px;
+  top: 220px;
+}
+
+#dean-blank {
+  position: absolute;
+  left: 700px;
+  top: 220px;
 }

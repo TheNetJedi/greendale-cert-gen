@@ -18,7 +18,16 @@ block content
         p#course-name Associate in #{courseName}
       #bottom-container
         p#description-text with all the rights and priveleges, immunities and honors thereunto belonging and in testimony thereof it grants this diploma sealed with the seal of the Greendale Community College
-        img(id='footer-image', src='/images/footer.png' , alt='signatures')
+        #footer
+          #sign-block
+            img(id='richie-sign', src='/images/richie-sign.png' , alt='richie sign')
+            img(id='bob-sign', src='/images/bob-sign.png' , alt='bob sign')
+          img(id='logo', src='/images/logo.png' , alt='logo')
+          img(id='craig-sign', src='/images/craig-sign.png' , alt='craig sign')
+        #blanks-container 
+          p(id='trustee-blank', class='blank') Board of Trustees
+          p(id='dean-custodian-blank', class='blank') Dean Custodian 
+          p(id='dean-blank', class='blank') Dean of the college
   script(src='/js/show-certificate.js')
     
 
