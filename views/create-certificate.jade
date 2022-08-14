@@ -1,0 +1,15 @@
+extends layout
+block content
+  #create-certificate-container
+    h2 Create Certificate
+    br
+    form(action='/show-certificate', method='POST')
+      label Student Name: 
+      br
+      input(type='text', name='student-name', value='')
+      br
+      label Course Name: 
+      br
+      input(type='text', name='course-name', value='') 
+      br
+      input(type='submit', value='Submit')

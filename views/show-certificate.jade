@@ -1,0 +1,35 @@
+extends layout
+
+append head
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
+
+block content
+  #certificate-container
+    #pdf-button-container
+      button#pdf-button Download PDF
+    #certificate 
+      #blue-box
+      #top-container
+        p#top-text In pursuance of the authority vested in it by the County of Greendale and upon the recommendation of the faculty of 
+          p#college-text GREENDALE COMMUNITY COLLEGE
+          p#trustee-text the Board of Trustees of Greendale Community College confers upon
+        p#student-name #{studentName}
+        p#course-name Associate in #{courseName}
+      #bottom-container
+        p#description-text with all the rights and priveleges, immunities and honors thereunto belonging and in testimony thereof it grants this diploma sealed with the seal of the Greendale Community College
+        #footer
+          #sign-block
+            img(id='richie-sign', src='/images/richie-sign.png' , alt='richie sign')
+            img(id='bob-sign', src='/images/bob-sign.png' , alt='bob sign')
+          img(id='logo', src='/images/logo.png' , alt='logo')
+          img(id='craig-sign', src='/images/craig-sign.png' , alt='craig sign')
+        #blanks-container 
+          p(id='trustee-blank', class='blank') Board of Trustees
+          p(id='dean-custodian-blank', class='blank') Dean Custodian 
+          p(id='dean-blank', class='blank') Dean of the college
+  script(src='/js/show-certificate.js')
+    
+
+
+
